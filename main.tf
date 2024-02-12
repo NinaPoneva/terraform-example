@@ -2,10 +2,10 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=3.0.0"
+      version = "3.89.0"
     }
   }
-backend "azurerm" {
+  backend "azurerm" {
     resource_group_name  = "StorageRG"
     storage_account_name = "taskboardstorageninakr"
     container_name       = "taskboardcontainer"
